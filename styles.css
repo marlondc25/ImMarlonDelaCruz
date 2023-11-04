@@ -1,0 +1,259 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html
+{
+	font-size:100%;
+}
+.name-hero {
+  position: relative;
+  text-align: center; /* Center the content horizontally */
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center; /* Center the badges horizontally */
+  align-items: flex-end; /* Align the badges to the bottom */
+  margin-right: 20px; /* Move the badges to the right by 20px */
+}
+
+.badge {
+  width: 100px; /* Adjust the width to your desired size */
+  height: 100px; /* Adjust the height to your desired size */
+  margin: 5px; /* Add margin for spacing */
+  /* Add more styles or adjust the size as needed */
+}
+
+
+.circular-image {
+  width: 160px; /* Set your desired width and height for the circular image */
+  height: 160px;
+  border-radius: 50%; /* This property creates the circular shape */
+  object-fit: cover; /* Ensures the image covers the circle without stretching */
+  border: 2px solid #fff; /* Optional: Add a white border for a clean look */
+}
+
+body
+{
+	-webkit-font-smoothing:antialiased;
+	color:#333332;
+	font-family:Lora, serif;
+	font-size:18px;
+	font-weight:400;
+	line-height:1.4;
+	text-rendering:optimizeLegibility;
+}
+
+.skill-set li:hover
+{
+	background:#3498db;
+}
+
+h1
+{
+	color:rgba(0,0,0,.75);
+}
+
+.wrapper
+{
+	height:100%;
+}
+
+.left
+{
+	background-color:rgba(0,0,0,.025);
+	border-right:1px solid rgba(0,0,0,.05);
+	float:right;
+	height:100%;
+	margin-left:-1px;
+	min-width:256px;
+	position:fixed;
+	width:33.33%;
+  
+}
+
+.right
+{
+	float:right;
+	height:100%;
+	position:relative;
+	width:66.66%;
+}
+
+
+.name-hero
+{
+	background:rgba(0,0,0,.001);
+	bottom:0;
+	height:290px;
+	left:0;
+	margin:auto;
+	position:absolute;
+	right:0;
+	top:0;
+	width:85%;
+}
+
+.me-img
+{
+	background:white no-repeat center center ;
+	background-size:100%;
+  background-position:0px;
+	border-radius:100%;
+	height:150px;
+	margin:0 auto;
+	position:relative;
+	width:150px;
+}
+
+.name-hero h1
+{
+	font-family:Open Sans, sans-serif;
+	font-size:1.5em;
+	text-align:center;
+}
+
+.name-hero h1 em
+{
+	color:rgba(0,0,0,.3);
+	font-style:normal;
+	font-weight:700;
+}
+
+.name-hero p
+{
+	color:rgba(0,0,0,.75);
+	font-size:.75em;
+	line-height:1.5;
+	margin:0 8px 0 0;
+	text-align:center;
+}
+
+.name-hero .name-text
+{
+	margin:0 auto;
+	width:85%;
+}
+
+.inner
+{
+	margin:0 auto;
+	max-width:975px;
+	padding:3em;
+}
+
+.inner h1
+{
+	font-size:1.75em;
+}
+
+.inner p
+{
+	color:rgba(0,0,0,.5);
+}
+
+.inner p em
+{
+	color:rgba(0,0,0,1);
+	font-style:normal;
+}
+
+.inner section
+{
+	margin:100px auto;
+}
+
+ul
+{
+	list-style-type:none;
+	margin-top:-10px;
+	max-width:570px;
+	padding:0;
+}
+
+.skill-set li
+{
+	background:rgba(0,0,0,.75);
+	border-radius:5px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px;
+	text-align:justify;
+}
+
+@media screen and (max-width: 48em) {
+	.right,.left
+	{
+		float:none;
+    position:relative !important;
+		width:100%;
+    min-height:500px;
+	}
+  .handmade {
+  text-align:center !important;
+  margin-top:0px !important;
+}
+
+@media screen and (max-width: 75em) {
+    body
+{ font-size:16px;}
+}
+
+@media screen and (max-width: 60em) {
+    body
+{ font-size:14px;}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* Add this CSS code to your styles.css or within a <style> element in your HTML document */
+
+/* Style the "Connect with Me" section */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline;
+}
+
+/* Style the links as buttons */
+.social-links a {
+  display: inline-block;
+  background-color: #3498db; /* Choose your desired background color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #2976c8; /* Color on hover */
+}
+
+}
+}
+.clearfix:after {
+   content: "google chrome"; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.handmade {
+  text-align:left;
+  margin-top:100px;
+}
+.handmade em {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.25em;
+  margin-left:5px;
+}
