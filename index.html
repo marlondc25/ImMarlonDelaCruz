@@ -6,19 +6,36 @@
   <div class="left">
     <div class="name-hero">
       <div class="me-img">
-        <img src="my-image.jpg" alt="Your Name" class="circular-image">
+          <img src="my-image.jpg" alt="Your Name" class="circular-image zoom-effect" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
       </div>
-      <div class="name-text"> 
-        <h1>Marlon <em>Dela Cruz</em></h1>
-        <p>10 Sitio Uno Street. Brgy. Bahaypare, Meycauayan Bulacan, Philippines</p>
-        <p>marlon.dcrodriguez@gmail.com</p>
-        <p>(+63) 995-385-6860</p>
-        <div>
-        <img src="badge1.png" alt="Badge 1" class="badge">
-        <img src="badge2.png" alt="Badge 2" class="badge">
-      </div> 
+      <div class="name-text">
+          <h1>Marlon <em>Dela Cruz</em></h1>
+          <p>10 Sitio Uno Street. Brgy. Bahaypare, Meycauayan Bulacan, Philippines</p>
+          <p>marlon.dcrodriguez@gmail.com</p>
+          <p>(+63) 995-385-6860</p>
+          <div>
+              <img src="badge1.png" alt="Badge 1" class="badge zoom-effect" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+              <img src="badge2.png" alt="Badge 2" class="badge zoom-effect" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+          </div>
       </div>
-    </div>
+  </div>
+  
+  <style>
+      .zoom-effect {
+          transition: transform 0.5s; /* Adjust the duration as needed */
+      }
+  </style>
+  
+  <script>
+      function zoomIn(element) {
+          element.style.transform = 'scale(1.5)';
+      }
+  
+      function zoomOut(element) {
+          element.style.transform = 'scale(1)';
+      }
+  </script>
+  
     </div>
   <div class="right">
 
@@ -63,6 +80,15 @@
           <li>Playing Guitar</li>
           <li>Music</li>
           <li>Cloud Computing (AWS & Azure)</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Personal Interests</h1>
+        <ul class="skill-set">
+          <li>Mountain Biking</li>
+          <li>Gaming/E-Sports</li>
+          <li>Playing Guitar</li>
+          <li>Music</li>
         </ul>
       </section>
       <section>
